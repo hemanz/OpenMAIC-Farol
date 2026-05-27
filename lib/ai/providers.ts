@@ -582,7 +582,7 @@ export const PROVIDERS: Record<ProviderId, ProviderConfig> = {
           thinking: {
             toggleable: true,
             budgetAdjustable: true,
-            defaultEnabled: false,
+            defaultEnabled: true,
           },
         },
       },
@@ -598,7 +598,7 @@ export const PROVIDERS: Record<ProviderId, ProviderConfig> = {
           thinking: {
             toggleable: true,
             budgetAdjustable: true,
-            defaultEnabled: false,
+            defaultEnabled: true,
           },
         },
       },

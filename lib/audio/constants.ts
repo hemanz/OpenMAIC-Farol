@@ -734,6 +734,43 @@ export const TTS_PROVIDERS: Record<BuiltInTTSProviderId, TTSProviderConfig> = {
         language: 'en-US',
         gender: 'neutral',
       },
+      // 巴西葡萄牙语 (Portuguese - Brazil) — speech-02-hd / 2.5 / 2.8 multilingual
+      {
+        id: 'Portuguese (Brazil)_Friendly_Person',
+        name: 'Friendly Person',
+        language: 'pt-BR',
+        gender: 'neutral',
+      },
+      {
+        id: 'Portuguese (Brazil)_Sentimental_Lady',
+        name: 'Sentimental Lady',
+        language: 'pt-BR',
+        gender: 'female',
+      },
+      {
+        id: 'Portuguese (Brazil)_Patient_Man',
+        name: 'Patient Man',
+        language: 'pt-BR',
+        gender: 'male',
+      },
+      {
+        id: 'Portuguese (Brazil)_Optimistic_Senior',
+        name: 'Optimistic Senior',
+        language: 'pt-BR',
+        gender: 'male',
+      },
+      {
+        id: 'Portuguese (Brazil)_Boy',
+        name: 'Boy',
+        language: 'pt-BR',
+        gender: 'male',
+      },
+      {
+        id: 'Portuguese (Brazil)_Girl',
+        name: 'Girl',
+        language: 'pt-BR',
+        gender: 'female',
+      },
     ],
     supportedFormats: ['mp3', 'wav', 'flac', 'pcm'],
     speedRange: {

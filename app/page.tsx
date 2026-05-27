@@ -78,7 +78,7 @@ const initialFormState: FormState = {
 };
 
 function HomePage() {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const { theme, setTheme } = useTheme();
   const router = useRouter();
   const [form, setForm] = useState<FormState>(initialFormState);
@@ -277,8 +277,12 @@ function HomePage() {
 
     try {
       const userProfile = useUserProfileStore.getState();
+      const localeHint =
+        locale === 'pt-BR'
+          ? '[Generate the entire course in Brazilian Portuguese (pt-BR). Use Brazilian regional vocabulary, cultural references (Brazilian examples, R$ as currency, Brazilian names like João/Maria/Ana), and pedagogical conventions familiar to Brazilian students. If the user explicitly requests a different language below, that overrides this instruction.]\n\n'
+          : '';
       const requirements: UserRequirements = {
-        requirement: form.requirement,
+        requirement: localeHint + form.requirement,
         userNickname: userProfile.nickname || undefined,
         userBio: userProfile.bio || undefined,
         webSearch: form.webSearch || undefined,
